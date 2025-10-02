@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/jacques758/COMP3104/issues"
   },
-  "homepage": "https://github.com/jacques758/COMP3104#readme",
+  "homepage": "https://jacques758.github.com/COMP3104",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
