@@ -17,3 +17,15 @@ if ! echo "$COMMIT_MSG" | grep -Eq "^(feat|fix|docs|style|refactor|test|chore): 
   echo "Example: feat: add user authentication"
   exit 1
 fi
+
+
+
+# pre- push 
+
+#!/bin/sh
+echo "Running pre-push hook: Running tests..."
+npm test
+if [ $? -ne 0 ]; then
+  echo "Tests failed! Fix them before pushing."
+  exit 1
+fi
